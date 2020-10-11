@@ -1,0 +1,70 @@
+$color1: #2d3a43;
+$color2: #4c6a6c;
+$color3: #6c8186;
+$color4: #89a6b0;
+$color5: #d86d5d;
+$color6: #dcbe83;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: 2fr 1.5fr 2fr;
+    grid-template-areas: ". . ."
+                        ". container ."
+                        ". . .";
+}
+
+.container {
+    grid-area: container;
+    background-color: white;
+    box-shadow: 3px 3px 20px black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    transition: all 1s ease-in-out;
+    align-items: center;
+    justify-items: center;
+}
+.color {
+        border: 10px solid white;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        box-shadow: 10px 10px 20px black;
+        cursor: pointer;
+    }
+    .color:hover {
+        transform: scale(0.9);
+    }
+    .color:first-child {
+        background-color: $color1;
+    }
+    .color:nth-child(2) {
+        background-color: $color2;
+    }
+    .color:nth-child(3) {
+        background-color: $color3;
+    }
+    .color:nth-child(4) {
+        background-color: $color4;
+    }
+    .color:nth-child(5) {
+        background-color: $color5;
+    }
+    .color:nth-child(6) {
+        background-color: $color6;
+    }
+
