@@ -29,8 +29,8 @@ body {
   border-radius: 10px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   -webkit-box-pack: center;
@@ -52,7 +52,6 @@ body {
   -webkit-box-shadow: 10px 10px 20px black;
           box-shadow: 10px 10px 20px black;
   cursor: pointer;
-  background: red;
   -webkit-transition: border 1s ease-in-out;
   transition: border 1s ease-in-out;
 }
@@ -84,5 +83,54 @@ body {
 
 .color:nth-child(6) {
   background-color: #e8d054;
+}
+
+.container_dos {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.refresh i {
+  color: black;
+  font-size: 30px;
+  border-radius: 60%;
+  padding: 10px;
+  -webkit-box-shadow: 10px 10px 20px black;
+          box-shadow: 10px 10px 20px black;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.refresh i:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.next i {
+  color: black;
+  font-size: 30px;
+  border-radius: 60%;
+  padding: 10px;
+  -webkit-box-shadow: 10px 10px 20px black;
+          box-shadow: 10px 10px 20px black;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.next i:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 /*# sourceMappingURL=vangogh.css.map */

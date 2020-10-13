@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="boticelli/style/boticelli.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Boticelli</title>
+</head>
+<body>
+    <div class="container">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="container_dos">
+            <div class="refresh"><a href=""><i class="fas fa-sync-alt"></i></a></div>
+            <div class="next"><a href="monet.html"><i class="fas fa-random"></i></a></div>
+            </div>
+    </div>
+
+<script>
+    let divGrande= document.getElementsByClassName('container')[0];
+        let divChico= document.getElementsByClassName("color");
+        let icon= document.querySelectorAll('i');
+        
+        for (let i= 0; i<divChico.length; i++) {
+            divChico[i].addEventListener('click', cambiarColor);
+            function cambiarColor() {
+                for (let x= 0; x<divChico.length; x++) {
+                    if(i===x) { 
+                        let style = window.getComputedStyle(divChico[i]);
+                        let fondo = style.getPropertyValue('background-color');
+                        divGrande.style.backgroundColor= fondo;
+                        icon.forEach((y) => {
+                            y.style.color= fondo;
+                            y.style.background= "white"; 
+                            });
+                    } 
+                }
+            }
+        }
+    </script>
+</body>
+</html>
